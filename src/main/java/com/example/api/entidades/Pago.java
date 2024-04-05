@@ -30,7 +30,7 @@ public class Pago {
     @OneToOne
     @JoinColumn(name = "pedido_id")
     private Pedido pedido;
-    private double totalPago;
+    private Double totalPago;
     private Date fechaPago;
     @Enumerated(EnumType.STRING)
     private MetodoPago metodoPago;
